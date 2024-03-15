@@ -1,0 +1,86 @@
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+}
+
+    #bdgroove2{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+
+.gradient{
+    animation: gradient 3s ease-in-out infinite;
+    background: linear-gradient(90deg, rgb(67, 208, 62) 0%, rgba(9,97,121,1) 49%, rgb(250, 0, 0) 100%);
+    background-size: 500%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.border {
+    animation: border 5s infinite;
+}
+
+.font-size {
+    animation: font-size 15s infinite;
+}
+
+.foto {
+    animation: foto 15s infinite;
+}
+
+@keyframes border {
+    0% {border: groove 10px #b00b0b; border-radius: 5px;}
+    25% {border: double 10px #d00a0a; border-radius: 10px;}
+    50% {border: dotted 10px #9d0505; border-radius: 15px;}
+    75% {border: transparent 10px #bb3a3a; border-radius: 20px;}
+    100% { border: groove 10px #b00b0b; border-radius: 5px;}
+  }
+
+  @keyframes foto {
+    0% {transform: scaleX(-1);}
+    25% {transform: scaleX(0);}
+    50% {transform: scaleX(1);}
+    75% {transform: scaleX(0);}
+    100% {transform: scaleX(-1);}
+  }
+
+  @keyframes font-size {
+    0% {font-size: 20px; color: #3427ab;}
+    50% {font-size: 30px; color: #7f3710;}
+    80% {font-size: 35px; color: #0c8223;}
+    100% {font-size: 20px; color: #3427ab;}
+  }
+
+  /* @keyframes wave {
+    0% {padding-top: 40px; margin-left: -200px; color: #3427ab;}
+    20% {padding-top: 0px; margin-left: 0px; color: #279eab;}
+    40% {padding-top: 40px; margin-left: 200px; color: #e8e10f;}
+    60% {padding-top: 0px; margin-left: 0px; color: #e61f0d;}
+    80% {padding-top: 40px; margin-left: -200px; color: #1e0dda;}
+    100% {padding-top: 0px;margin: 0 auto; color: green}
+  }
+
+  @keyframes wave1 {
+    0% {padding-top: 190px; margin-left: -200px; color: #3427ab;}
+    20% {padding-top: 0px; margin-left: 0px; color: #279eab;}
+    40% {padding-top: 40px; margin-left: 200px; color: #e8e10f;}
+    60% {padding-top: 0px; margin-left: 0px; color: #e61f0d;}
+    80% {padding-top: 40px; margin-left: -200px; color: #1e0dda;}
+    100% {padding-top: 100px;margin: 0 auto; color: green}
+  } */
