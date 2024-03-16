@@ -22,7 +22,7 @@ section {
 .left {
     float: left;
     width: 50%;
-    /* text-shadow: rgb(8, 75, 8) 2px 1px; */
+    padding: 45px 15px;
 }
 
 .right {
