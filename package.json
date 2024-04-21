@@ -38,6 +38,7 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "browser-sync": "^3.0.2",
     "gulp-cli": "^2.3.0"
   }
 }
