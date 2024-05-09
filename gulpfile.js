@@ -33,6 +33,7 @@ function html() {
         })
       )
       .pipe(dest("dist"))
+      .pipe(sync.reload({ stream: true }))
   );
 }
 
@@ -49,6 +50,7 @@ function css() {
       // .pipe(concat('index.css'))
       .pipe(removeComments())
       .pipe(dest("dist/assets"))
+      .pipe(sync.reload({ stream: true }))
   );
 }
 
