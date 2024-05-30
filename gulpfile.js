@@ -49,7 +49,7 @@ function css() {
       .pipe(csso())
       // .pipe(concat('index.css'))
       .pipe(removeComments())
-      .pipe(dest("dist/assets"))
+      .pipe(dest("dist/assets/css"))
       .pipe(sync.reload({ stream: true }))
   );
 }
@@ -97,11 +97,11 @@ function images() {
 }
 
 function media() {
-  return src("src/assets/**").pipe(dest("dist/assets"));
+  return src("src/assets/media/*.*").pipe(dest("dist/assets/media"));
 }
 
 function font() {
-  return src("src/assets/**").pipe(dest("dist/assets"));
+  return src("src/assets/fonts/**").pipe(dest("dist/assets/fonts"));
 }
 
 function serve() {
