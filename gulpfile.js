@@ -39,7 +39,7 @@ function html() {
 
 function css() {
   return (
-    src("src/assets/**.css")
+    src("src/assets/css/**.css")
       // .pipe(sass())
       .pipe(
         autoprefixer({

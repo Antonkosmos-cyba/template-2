@@ -4,7 +4,7 @@
   "description": "Шаблон для создания визиток (открыток) с применением tailwind",
   "main": "index.js",
   "scripts": {
-    "tail": "npx tailwindcss -i ./src/input.css -o ./src/assets/index.css --watch"
+    "tail": "npx tailwindcss -i ./src/input.css -o ./src/assets/css/index.css --watch"
   },
   "repository": {
     "type": "git",
