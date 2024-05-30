@@ -1,6 +1,6 @@
     @font-face {
         font-family: "Spectral";
-        src: url("./assets/Spectral.ttf") format("truetype");
+        src: url("./assets/fonts/Spectral/Spectral.ttf") format("truetype");
     }
 
     @tailwind base;
