@@ -1,120 +1,124 @@
 body {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: auto auto;
+  background-size: cover;
 }
 
 #bdgroove2 {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-
 .gradient {
-    animation: gradient 3s ease-in-out infinite;
-    background: linear-gradient(90deg, rgb(67, 208, 62) 0%, rgba(9, 97, 121, 1) 49%, rgb(250, 0, 0) 100%);
-    background-size: 500%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease-in-out infinite;
+  background: linear-gradient(
+    90deg,
+    rgb(67, 208, 62) 0%,
+    rgba(9, 97, 121, 1) 49%,
+    rgb(250, 0, 0) 100%
+  );
+  background-size: 500%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .border {
-    animation: border 5s infinite;
+  animation: border 5s infinite;
 }
 
 .font-size {
-    animation: font-size 15s infinite;
+  animation: font-size 15s infinite;
 }
 
 .foto {
-    animation: foto 15s infinite;
+  animation: foto 15s infinite;
 }
 
 @keyframes border {
-    0% {
-        border: groove 10px #b00b0b;
-        border-radius: 5px;
-    }
+  0% {
+    border: groove 10px #b00b0b;
+    border-radius: 5px;
+  }
 
-    25% {
-        border: double 10px #d00a0a;
-        border-radius: 10px;
-    }
+  25% {
+    border: double 10px #d00a0a;
+    border-radius: 10px;
+  }
 
-    50% {
-        border: dotted 10px #9d0505;
-        border-radius: 15px;
-    }
+  50% {
+    border: dotted 10px #9d0505;
+    border-radius: 15px;
+  }
 
-    75% {
-        border: transparent 10px #bb3a3a;
-        border-radius: 20px;
-    }
+  75% {
+    border: transparent 10px #bb3a3a;
+    border-radius: 20px;
+  }
 
-    100% {
-        border: groove 10px #b00b0b;
-        border-radius: 5px;
-    }
+  100% {
+    border: groove 10px #b00b0b;
+    border-radius: 5px;
+  }
 }
 
 @keyframes foto {
-    0% {
-        transform: scaleX(-1);
-    }
+  0% {
+    transform: scaleX(-1);
+  }
 
-    25% {
-        transform: scaleX(0);
-    }
+  25% {
+    transform: scaleX(0);
+  }
 
-    50% {
-        transform: scaleX(1);
-    }
+  50% {
+    transform: scaleX(1);
+  }
 
-    75% {
-        transform: scaleX(0);
-    }
+  75% {
+    transform: scaleX(0);
+  }
 
-    100% {
-        transform: scaleX(-1);
-    }
+  100% {
+    transform: scaleX(-1);
+  }
 }
 
 @keyframes font-size {
-    0% {
-        font-size: 20px;
-        color: #3427ab;
-    }
+  0% {
+    font-size: 20px;
+    color: #3427ab;
+  }
 
-    50% {
-        font-size: 30px;
-        color: #7f3710;
-    }
+  50% {
+    font-size: 30px;
+    color: #7f3710;
+  }
 
-    80% {
-        font-size: 35px;
-        color: #0c8223;
-    }
+  80% {
+    font-size: 35px;
+    color: #0c8223;
+  }
 
-    100% {
-        font-size: 20px;
-        color: #3427ab;
-    }
+  100% {
+    font-size: 20px;
+    color: #3427ab;
+  }
 }
 
 /* @keyframes wave {
@@ -136,32 +140,32 @@ body {
   } */
 
 .logo {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    padding-right: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 15px;
 }
 
 .foto-logo {
-    max-width: 200px;
-    margin-top: 20px;
-    border-radius: 10px;
+  max-width: 200px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 @media (max-width: 769px) {
-    .foto-logo {
-        width: 160px;
-    }
+  .foto-logo {
+    width: 160px;
+  }
 }
 
 @media (max-width: 426px) {
-    .foto-logo {
-        width: 140px;
-    }
+  .foto-logo {
+    width: 140px;
+  }
 }
 
 @media (max-width: 376px) {
-    .foto-logo {
-        width: 120px;
-    }
+  .foto-logo {
+    width: 120px;
+  }
 }
