@@ -20,7 +20,7 @@ const sync = require("browser-sync").create();
 const removeComments = require("gulp-strip-css-comments");
 function html() {
   return (
-    src("src/**/**.html")
+    src("./**.html")
       // .pipe(include({
       //     prefix: '@@'
       // }))
@@ -56,11 +56,11 @@ function css() {
 
 function js() {
   return (
-    src("src/*.js")
+    src("src/assets/js/*.js")
       .pipe(gulpBabel())
       .pipe(gulpUglify())
       // .pipe(concat('index.js'))
-      .pipe(dest("dist"))
+      .pipe(dest("dist/assets/js"))
   );
 }
 
