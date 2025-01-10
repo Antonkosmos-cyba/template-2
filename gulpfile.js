@@ -97,7 +97,7 @@ function images() {
 }
 
 function media() {
-  return src("src/assets/media/*.*").pipe(dest("dist/assets/media"));
+  return src("src/assets/media/**").pipe(dest("dist/assets/media"));
 }
 
 function font() {
