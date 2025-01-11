@@ -56,11 +56,11 @@ function css() {
 
 function js() {
   return (
-    src("src/*.js")
+    src("src/assets/js/*.js")
       .pipe(gulpBabel())
       .pipe(gulpUglify())
       // .pipe(concat('index.js'))
-      .pipe(dest("dist"))
+      .pipe(dest("dist/assets/js"))
   );
 }
 
@@ -97,7 +97,7 @@ function images() {
 }
 
 function media() {
-  return src("src/assets/media/*.*").pipe(dest("dist/assets/media"));
+  return src("src/assets/media/**").pipe(dest("dist/assets/media"));
 }
 
 function font() {

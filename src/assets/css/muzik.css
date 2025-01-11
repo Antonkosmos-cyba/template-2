@@ -38,7 +38,8 @@ section {
 
   .left {
     width: 100%;
-    margin-bottom: 5%;
+    /* margin-bottom: 1%; */
+    padding: 7px 10px;
   }
 
   .right {
