@@ -49,7 +49,7 @@ function css() {
       .pipe(csso())
       // .pipe(concat('index.css'))
       .pipe(removeComments())
-      .pipe(dest("dist/assets/css"))
+      .pipe(dest("dist/"))
       .pipe(sync.reload({ stream: true }))
   );
 }
@@ -60,7 +60,7 @@ function js() {
       .pipe(gulpBabel())
       .pipe(gulpUglify())
       // .pipe(concat('index.js'))
-      .pipe(dest("dist/assets/js"))
+      .pipe(dest("dist/js"))
   );
 }
 
@@ -92,16 +92,16 @@ function images() {
           optimizationLevel: 3, //0 to7
         })
       )
-      .pipe(dest("dist/assets"))
+      .pipe(dest("dist/"))
   );
 }
 
 function media() {
-  return src("src/assets/media/**").pipe(dest("dist/assets/media"));
+  return src("src/assets/media/muz/**").pipe(dest("dist/muz/"));
 }
 
 function font() {
-  return src("src/assets/fonts/**").pipe(dest("dist/assets/fonts"));
+  return src("src/assets/fonts/**").pipe(dest("dist/"));
 }
 
 function serve() {
